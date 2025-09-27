@@ -1,0 +1,8 @@
+test.xml
+text.xml
+
+*.o
+*.a
+*.so
+*.out
+*.exe
