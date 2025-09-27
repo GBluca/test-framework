@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestCase id="M1">
+
+    <Description>Controllo motore</Description>
+
+    <Step id="S1">
+        <Action type="send">echo send</Action>
+        <Expected>hello</Expected>
+    </Step>
+
+    <Step id="S2">
+        <Action type="send">send World</Action>
+        <Expected>World</Expected>
+    </Step>
+
+</TestCase>
