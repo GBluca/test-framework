@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase id="TC1">
+    <Description>Controllo motore</Description>
+
+    <Step id="S1">
+        <Action type="send">hello</Action>
+        <Expected>hello</Expected>
+    </Step>
+
+    <Step id="S2">
+        <Action type="receive">waiting</Action>
+        <Expected>hello</Expected>
+    </Step>
+
+    <Step id="S3">
+        <Action type="wait">2</Action>
+        <Expected>done</Expected>
+    </Step>
+</TestCase>
