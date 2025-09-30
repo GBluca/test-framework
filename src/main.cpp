@@ -45,11 +45,17 @@ struct TestCase{
 };
 
 
-int main(){
+int main(int argc,char* argv[]){
 
     tinyxml2::XMLDocument doc;
 
-    if (doc.LoadFile("/home/vboxuser/test-framework/tests/test1_example.xml") != tinyxml2::XML_SUCCESS ){
+    if(!argv[1]) {
+        std::cerr << "Errore, input file vuoto" << std::endl;
+        return 1;
+    }
+
+
+    if (doc.LoadFile(argv[1]) != tinyxml2::XML_SUCCESS ){
             std::cerr << "Errore nell-apertura del file XML" << std::endl;
             return 1;
     }
