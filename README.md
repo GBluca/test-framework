@@ -81,4 +81,21 @@ Esegui ./scripts/run_all_test.sh.
 
 ## 📁 Struttura Progetto
 
-<pre> ```text test-framework/ ├── bin/ # eseguibili compilati │ └── test_runner.exe ├── build/ # file oggetto (build intermedi) ├── logs/ # log di esecuzione e riepiloghi ├── Makefile # regole di build ├── README.md # documentazione ├── schemas/ # schema XSD │ └── test_schemas.xsd ├── scripts/ # script di automazione │ ├── pre-commit │ └── run_all_test.sh ├── src/ # sorgenti C++ │ └── main.cpp └── tests/ # file XML di test ├── test_example.xml └── test2_example.xml ``` </pre>
+```bash
+test-framework/
+├── bin/                 # eseguibili compilati
+│   └── test_runner.exe
+├── build/               # file oggetto (build intermedi)
+├── logs/                # log di esecuzione e riepiloghi
+├── Makefile             # regole di build
+├── README.md            # documentazione
+├── schemas/             # schema XSD
+│   └── test_schemas.xsd
+├── scripts/             # script di automazione
+│   ├── pre-commit
+│   └── run_all_test.sh
+├── src/                 # sorgenti C++
+│   └── main.cpp
+└── tests/               # file XML di test
+    ├── test_example.xml
+    └── test2_example.xml
