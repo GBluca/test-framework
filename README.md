@@ -1,12 +1,12 @@
 # XML Test Framework
 License: MITC++ VersionBuild Status
 
-##📖 Descrizione
+## 📖 Descrizione
 Un framework di test data-driven che utilizza XML per descrivere scenari di test, validati tramite XSD e simulati da un programma in C++.
 Include uno script Bash per automatizzare compilazione, validazione ed esecuzione.
 Progettato per riflettere scenari reali in ambito embedded e automotive.
 
-##🎬 Demo
+## 🎬 Demo
 Esempio di file di test XML:
 
 <TestCase id="M1">
@@ -25,7 +25,7 @@ Esempio di file di test XML:
   </Step>
 </TestCase>
 
-##✨ Funzionalità
+## ✨ Funzionalità
 ✅ Definizione standardizzata dei test tramite XML + XSD
 
 ⚡ Parsing veloce con TinyXML2 in C++
@@ -53,7 +53,7 @@ git clone https://github.com/user/xml-test-framework.git
 cd xml-test-framework
 make   # oppure compilazione manuale via g++
 
-##💻 Utilizzo
+## 💻 Utilizzo
 1. Validare un file XML
 bash
 Copia codice
@@ -67,7 +67,7 @@ bash
 Copia codice
 ./scripts/run_all_test.sh
 
-##⚙️ Configurazione
+## ⚙️ Configurazione
 I test sono definiti in file .xml dentro la cartella tests/.
 Lo schema di riferimento è schemas/test_schemas.xsd.
 
@@ -79,23 +79,22 @@ Salvalo in tests/.
 
 Esegui ./scripts/run_all_test.sh.
 
-##📁 Struttura Progetto
+## 📁 Struttura Progetto
 
-test-framwork/
-├── bin/               # eseguibili compilati
-│   └── test_runner.exe
-├── build/             # file oggetto (build intermedi)
-├── logs/              # log di esecuzione e riepiloghi
-├── Makefile           # regole di build
-├── README.md          # documentazione
-├── schemas/           # schema XSD
-│   └── test_schemas.xsd
-├── scripts/           # script di automazione
-│   ├── pre-commit
-│   └── run_all_test.sh
-├── src/               # sorgenti C++
-│   └── main.cpp
-└── tests/             # file XML di test
-    ├── test_example.xml
-    └── test2_example.xml
-
+test-framework/
+├── bin/ # eseguibili compilati
+│ └── test_runner.exe
+├── build/ # file oggetto (build intermedi)
+├── logs/ # log di esecuzione e riepiloghi
+├── Makefile # regole di build
+├── README.md # documentazione
+├── schemas/ # schema XSD
+│ └── test_schemas.xsd
+├── scripts/ # script di automazione
+│ ├── pre-commit
+│ └── run_all_test.sh
+├── src/ # sorgenti C++
+│ └── main.cpp
+└── tests/ # file XML di test
+├── test_example.xml
+└── test2_example.xml
