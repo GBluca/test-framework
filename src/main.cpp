@@ -47,6 +47,7 @@ struct TestCase{
 
 int main(int argc,char* argv[]){
 
+    bool exitCode = 0;
     tinyxml2::XMLDocument doc;
 
     if(!argv[1]) {
@@ -114,9 +115,10 @@ int main(int argc,char* argv[]){
             } else {
                 std::cout << "[RISULTATO] FAIL ❌ (atteso=" << ghostStep.expected 
                       << ", ottenuto=" << result << ")\n\n";
+                exitCode = 1;
             }
     }
 
-    return 0;
+    return exitCode;
 
 }
